@@ -30,6 +30,6 @@ for (i in 1:5000)
                       TRUE)
 }
 
-start.time <- Sys.time()
+end.time <- Sys.time()
 
 (end.time - start.time) / 5000

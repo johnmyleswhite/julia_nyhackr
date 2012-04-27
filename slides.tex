@@ -76,7 +76,7 @@ function simulated_annealing(cost::Function,
                              neighbor::Function,
                              temperature::Function,
                              iterations::Int64,
-                             keep_best::Bool
+                             keep_best::Bool)
                              
   # Set our current state to the specified intial state.
   s = s0
@@ -142,7 +142,7 @@ end
 \frame
 {
 	\begin{center}
-		That very generic code runs quite fast in Julia
+		That very generic piece of code runs quite fast in Julia
 	\end{center}
 }
 
@@ -203,7 +203,14 @@ end
 \frame
 {
 	\begin{center}
-		Each run of 10,000 iterations takes about 25 milliseconds
+		Each run of 10,000 iterations takes 25 milliseconds in Julia
+	\end{center}
+}
+
+\frame
+{
+	\begin{center}
+		A line-by-line translation into R takes 500 milliseconds per run
 	\end{center}
 }
 
